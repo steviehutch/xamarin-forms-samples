@@ -1,15 +1,20 @@
 ﻿using Xamarin.Forms;
+using System.Collections.Generic;
 
 namespace CustomRenderer
 {
 	public class App : Application
 	{
+        public static IList<string> MyPins {get; set;}
+
 		public static double ScreenHeight;
 		public static double ScreenWidth;
 
 		public App ()
 		{
-			MainPage = new MapPage ();
+            MyPins = new List<string>();
+            MainPage = new MapPage ();
+            //MainPage = new NavigationPage(new MainPage());
 		}
 
 		protected override void OnStart ()

@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomRenderer", "CustomRenderer\CustomRenderer.csproj", "{51FD788A-38FA-4793-B071-07474301CF8C}"
 EndProject
@@ -61,7 +61,6 @@ Global
 		{6CA3C34F-2D95-48F0-8203-92B6293E8D0C}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
 		{6CA3C34F-2D95-48F0-8203-92B6293E8D0C}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
 		{6CA3C34F-2D95-48F0-8203-92B6293E8D0C}.Debug|Mixed Platforms.ActiveCfg = Debug|iPhone
-		{6CA3C34F-2D95-48F0-8203-92B6293E8D0C}.Debug|Mixed Platforms.Build.0 = Debug|iPhone
 		{6CA3C34F-2D95-48F0-8203-92B6293E8D0C}.Debug|x64.ActiveCfg = Debug|iPhone
 		{6CA3C34F-2D95-48F0-8203-92B6293E8D0C}.Debug|x86.ActiveCfg = Debug|iPhone
 		{6CA3C34F-2D95-48F0-8203-92B6293E8D0C}.Release|Any CPU.ActiveCfg = Release|iPhone
@@ -83,8 +82,6 @@ Global
 		{EC08DD80-39D2-419C-914D-57C5BA150A2D}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
 		{EC08DD80-39D2-419C-914D-57C5BA150A2D}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
 		{EC08DD80-39D2-419C-914D-57C5BA150A2D}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
-		{EC08DD80-39D2-419C-914D-57C5BA150A2D}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
-		{EC08DD80-39D2-419C-914D-57C5BA150A2D}.Debug|Mixed Platforms.Deploy.0 = Debug|Any CPU
 		{EC08DD80-39D2-419C-914D-57C5BA150A2D}.Debug|x64.ActiveCfg = Debug|Any CPU
 		{EC08DD80-39D2-419C-914D-57C5BA150A2D}.Debug|x64.Build.0 = Debug|Any CPU
 		{EC08DD80-39D2-419C-914D-57C5BA150A2D}.Debug|x64.Deploy.0 = Debug|Any CPU

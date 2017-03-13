@@ -6,7 +6,13 @@ namespace CustomRenderer
 {
 	public partial class MapPage : ContentPage
 	{
-		public MapPage ()
+        double FalmouthLat = 50.149181;
+        double FalmouthLong = -5.070855;
+
+        double CoffeeChesterLat = 53.191012;
+        double CoffeeChesterLong = -2.887430;
+
+        public MapPage ()
 		{
 			InitializeComponent ();
 
@@ -23,9 +29,38 @@ namespace CustomRenderer
                 Url = "http://xamarin.com/about/"
             };
 
-            customMap.CustomPins = new List<CustomPin> { pin };
-			customMap.Pins.Add (pin.Pin);
-			customMap.MoveToRegion (MapSpan.FromCenterAndRadius (new Position (37.79752, -122.40183), Distance.FromMiles (1.0)));
+            var pin1 = new CustomPin
+            {
+                Pin = new Pin
+                {
+                    Type = PinType.Place,
+                    Position = new Position(CoffeeChesterLat, CoffeeChesterLong),
+                    Label = "StevieHutch",
+                    Address = "Coffee shop in Chester"
+                },
+                Id = "StevieHutch",
+                Url = "http://mmst.org/"
+            };
+
+            var pin2 = new CustomPin
+            {
+                Pin = new Pin
+                {
+                    Type = PinType.Place,
+                    Position = new Position(FalmouthLat, FalmouthLong),
+                    Label = "Falmouth University",
+                    Address = "394 Pacific Ave, San Francisco CA"
+                },
+                Id = "Falmouth",
+                Url = "http://falmouth.ac.uk/"
+            };
+
+            customMap.CustomPins = new List<CustomPin> { pin, pin1, pin2 };
+			customMap.Pins.Add(pin.Pin);
+            customMap.Pins.Add(pin1.Pin);
+            customMap.Pins.Add(pin2.Pin);
+
+            customMap.MoveToRegion (MapSpan.FromCenterAndRadius (new Position (CoffeeChesterLat, CoffeeChesterLong), Distance.FromMiles (1.0)));
 		}
 	}
 }
